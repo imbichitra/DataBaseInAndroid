@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bpradhan.validation.MainActivity">
+
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="21dp"
+        android:ems="10"
+
+        android:hint="Mail" />
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editText4"
+        android:layout_below="@+id/editText4"
+        android:layout_marginTop="13dp"
+        android:ems="10"
+
+        android:hint="Password" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editText5"
+        android:layout_below="@+id/editText5"
+        android:text="Remember" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/checkBox"
+        android:layout_below="@+id/checkBox"
+        android:layout_marginTop="26dp"
+        android:text="ok"
+        android:onClick="validate"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/button"
+        android:layout_toEndOf="@+id/checkBox"
+        android:text="save in database"
+        android:onClick="saveData"/>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/button"
+        android:layout_below="@+id/button"
+        android:text="Retrive"
+        android:onClick="getAllData"/>
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/button2"
+        android:layout_below="@+id/button2"
+        android:text="Update"
+        android:onClick="updateData"/>
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/button3"
+        android:layout_below="@+id/button3"
+        android:layout_marginTop="13dp"
+        android:text="Delete"
+        android:onClick="deleteAllData"/>
+
+
+</RelativeLayout>
